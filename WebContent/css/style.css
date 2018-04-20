@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.Knop {
+     font-size: 140%;
+     background-color: #81b2ea;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    border-radius: 100px;
+}
+
+main nav a:hover, header li:hover a, .Knop:hover {
+    background-color: #4286a4;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.Filters {
+	border: 5px solid #4286ff;
+    margin: 9px;
+    padding: 9px;
+    background-color: #a5d5ef;
+    border-radius: 15px;
+    width: 300px;
+    height: 220px;
+    grid-column: 2;
+    grid-row: 1/ 2;
+}
+
+.overzichtPagina {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.Table {
+	grid-column: 1;
+	grid-row: 1/ 2;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 140%;
+	font-variant: small-caps;
+}
+
+body {
+	background: #b5e5e3;
+}
+p span {
+    display: block;
+}
+
+main, aside {
+	padding: 20px;
+	font-size: 25px
+}
+
+p {
+	line-height: 1.4;
+	padding: 5px;
+}
+h1 {
+	margin-left: 20px;
+}
+
+
+.toevoegenForm {
+	font-size: 60%;
+}
+
+
+.toevoegen-velden .row {
+	margin: 10px;
+    font-size: 150%;
+}
+
+table, th, td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table {
+	position: relative;
+	text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #a3cecc;
+}
+table tr:nth-child(odd) {
+    background-color: #84bcba;
+}
+table th {
+    background-color: #4286f4;
+}
+
+
+@media screen and (max-width: 700px) {
+.Filters {
+	width: 80%;
+	grid-column: 1 / 3;
+    grid-row: 1;
+}
+.Table {
+	grid-column: 1;
+    grid-row: 2;
+}
+}
+
+@media screen and (max-width: 480px) {
+p {
+	font-size: 80%;
+}
+}
